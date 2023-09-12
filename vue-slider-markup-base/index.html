@@ -29,10 +29,9 @@
                     <div class="prev" @click="prev()"></div>
                     <div class="next" @click="next()"></div>
 
-                    <!-- @click="" cambiare valore di activeImage 
+                    <!--@click="" cambiare valore di activeImage 
                     class=" "active si deve vedere solo se activeImage == i
-                    0 == 0
-                    -->
+                    0 == 0-->
                     <div v-for="(slide, i) in slides" :key="slide.id" class="thumb">
                         <img :src="slide.image" alt="Spiderman" />
                     </div>
