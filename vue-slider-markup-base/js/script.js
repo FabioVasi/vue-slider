@@ -53,15 +53,14 @@ createApp({
     next() {
         console.log('next');            
         console.log(this.slides);
-
         this.activeImage++;
-
         if(this.activeImage > this.slides.length -1) {
             this.activeImage = 0
         }
     },
     prev() {
         console.log('prev');
+        console.log(this.slides);
         this.activeImage--;
         if(this.activeImage < 0) {
             this.activeImage = this.slides.length -1
