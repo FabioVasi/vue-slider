@@ -65,6 +65,18 @@ createApp({
         if(this.activeImage < 0) {
             this.activeImage = this.slides.length -1
         }
+    },
+    ThumbImageView(i) {
+        this.activeImage = i;
+    },
+    autoplay() {
+        this.intervalsetInterval(this.next, 3000);
+    },
+    stop() {
+        this.autoplay();
     }
+  },
+  mounted() {
+    this.autoplay();
   }
 }).mount('#app')

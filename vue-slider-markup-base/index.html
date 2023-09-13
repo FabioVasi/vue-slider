@@ -32,7 +32,7 @@
                     <!--@click="" cambiare valore di activeImage 
                     class=" "active si deve vedere solo se activeImage == i
                     0 == 0-->
-                    <div v-for="(slide, i) in slides" :key="slide.id" class="thumb" v-bind:class="[i === activeImage ? 'active' : '']">
+                    <div v-for="(slide, i) in slides" :key="slide.id" class="thumb" @click="ThumbImageView(i)" v-bind:class="i === activeImage ? 'active' : '' ">
                         <img :src="slide.image"/>
                     </div>
                 </div>
