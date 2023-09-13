@@ -70,7 +70,7 @@ createApp({
         this.activeImage = i;
     },
     autoplay() {
-        this.intervalsetInterval(this.next, 3000);
+        this.setInterval(this.next, 3000);
     },
     stop() {
         this.autoplay();
